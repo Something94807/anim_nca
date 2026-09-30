@@ -18,6 +18,7 @@ Starting from a single cell, the NCA grows into the first frame, then has 30 ste
 Training uses the sample pool from Mordvintsev et al. States are saved and picked up again in later training steps, so the NCA learns to keep the loop running indefinitely instead of just playing it once. Each batch, the worst sample is replaced with a fresh seed so it doesn't forget how to grow. Since the target changes over time here, each saved state also keeps track of its age and which frame it started on, so it's always checked against the right frame.
 
 ### Running
+Download ```anim_nca.py``` & ```sonic.gif```. optionally download ```anim_nca_weights.pt``` if you don't want to train from scratch. 
 ```
    pip install torch pygame pillow numpy
    python anim_nca.py
