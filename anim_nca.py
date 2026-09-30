@@ -29,7 +29,7 @@ WATCH_SIZE = 132           # canvas size when watching; training uses the sprite
 WATCH_SCALE = 4
 SPEEDS = [0.1, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64]
 WRAP_WHEN_WATCHING = True
-SAVE_FILE = "anim_nca_free_c24_256.pt"
+SAVE_FILE = "anim_nca_weights.pt"
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 
