@@ -1,7 +1,7 @@
 # AnimNCA
 ## Neural Cellular Automata for Animation
 
-AnimNCA is inspired by "Growing Neural Cellular Automata" (Mordvintsev et al., 2020), which showed that an NCA can grow an image from a single cell and keep it stable. AnimNCA asks whether an NCA can learn a looping walk cycle instead of a static image. The model gets no frame input or timer. Each cell only sees its neighbors, so the timing of the animation has to be kept by the cells themselves.
+AnimNCA is inspired by ["Growing Neural Cellular Automata" (Mordvintsev et al., 2020)](https://distill.pub/2020/growing-ca/), which showed that an NCA can grow an image from a single cell and keep it stable. AnimNCA asks whether an NCA can learn a looping walk cycle instead of a static image. The model gets no frame input or timer. Each cell only sees its neighbors, so the timing of the animation has to be kept by the cells themselves.
 
 ### Results
 Model is grown from a single cell and continues the 6 frame walk cycle. Original walk cycle on the left for comparison. the original and NCA are aligned once at start, but will drift. the NCA runs freely and is not synced to it. 
